@@ -1,0 +1,12 @@
+node_modules
+.svelte-kit
+.wrangler
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# Paid product files: keep out of git (use private R2 bucket)
+/Beyond_72_Hours_UK_Prepper_Guide.*
+static/_files/
+.DS_Store

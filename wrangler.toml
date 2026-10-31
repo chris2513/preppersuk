@@ -1,0 +1,19 @@
+name = "beyond-72-hours"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".svelte-kit/cloudflare"
+
+# Optional: private R2 bucket holding the paid files (recommended for production).
+# Upload with:
+#   npx wrangler r2 object put beyond-72-private/Beyond_72_Hours_UK_Prepper_Guide.pdf --file Beyond_72_Hours_UK_Prepper_Guide.pdf
+# then uncomment:
+# [[r2_buckets]]
+# binding = "DOWNLOADS"
+# bucket_name = "beyond-72-private"
+
+# Optional: KV namespace used as a lead-backup log (never lose a lead).
+# [[kv_namespaces]]
+# binding = "LEADS_KV"
+# id = "<your-kv-id>"
+
+# Secrets (set in Cloudflare dashboard or `wrangler pages secret put`): see .env.example
